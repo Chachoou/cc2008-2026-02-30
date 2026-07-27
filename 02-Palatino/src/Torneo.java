@@ -12,13 +12,6 @@ public class Torneo {
 
     public String resumen() {
 
-        int totalGoles = 0;
-
-        for (Equipo e: equipos) {
-            totalGoles += e.getGoles();
-        }
-
-
         int totalGoles = e1.getGoles() + e2.getGoles() + e3.getGoles();
         int totalTirosEsquina = e1.getTirosEsquina() + e2.getTirosEsquina();
         int totalTarjetasAmarillas = e1.getTarjetasAmarillas() + e2.getTarjetasAmarillas();
@@ -48,7 +41,7 @@ public class Torneo {
         return "Numero de equipo invalido.";
     }
 
-    public setNombre(String nombre) {
+    public void setNombre(String nombre) {
         // validaciones
         this.nombre = nombre;
     }
